@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Destinations in India</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 85%;
+            margin: 30px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.94);
+            border-radius: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #a34400;
+        }
+
+        h2 {
+            color: #b34b08;
+        }
+
+        nav {
+            text-align: center;
+            background: #174c40;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        nav a {
+            margin: 8px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: orange;
+        }
+
+        li {
+            line-height: 1.8;
+        }
+
+        .destinations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px #0002;
+        }
+
+        .card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card h3,
+        .card p {
+            margin: 15px;
+        }
+
+        .card h3 {
+            color: #a34400;
+        }
+
+        .card p {
+            line-height: 1.5;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .top {
+            text-align: right;
+        }
+
+        .top a {
+            color: #a34400;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 15px;
+            background: #174c40;
+            color: white;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+<div class="container">
+
+    <h1>🌏 Popular Destinations in India</h1>
+
+    <p style="text-align:center;">
+        Discover the beauty, culture and heritage of India!
+    </p>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="destinations.html">Destinations</a> |
+        <a href="foods.html">Foods</a> |
+        <a href="places.html">Places</a> |
+        <a href="gallery.html">Gallery</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <hr>
+
+    <h2>🏆 Top 5 Destinations</h2>
+
+    <ol>
+        <li>Delhi</li>
+        <li>Goa</li>
+        <li>Manali</li>
+        <li>Jaipur</li>
+        <li>Mumbai</li>
+    </ol>
+
+    <hr>
+
+    <h2>🎒 Things to Carry While Travelling</h2>
+
+    <ul>
+        <li>Clothes</li>
+        <li>Travel Documents</li>
+        <li>Mobile Phone and Charger</li>
+        <li>Water Bottle</li>
+        <li>First Aid Kit</li>
+    </ul>
+
+    <hr>
+
+    <h2>📍 Famous Attractions</h2>
+
+    <ul>
+        <li>Delhi
+            <ul>
+                <li>India Gate</li>
+                <li>Red Fort</li>
+                <li>Qutub Minar</li>
+            </ul>
+        </li>
+
+        <li>Goa
+            <ul>
+                <li>Baga Beach</li>
+                <li>Calangute Beach</li>
+                <li>Fort Aguada</li>
+            </ul>
+        </li>
+
+        <li>Manali
+            <ul>
+                <li>Solang Valley</li>
+                <li>Rohtang Pass</li>
+                <li>Hadimba Temple</li>
+            </ul>
+        </li>
+
+        <li>Jaipur
+            <ul>
+                <li>Hawa Mahal</li>
+                <li>Amber Fort</li>
+                <li>City Palace</li>
+            </ul>
+        </li>
+
+        <li>Mumbai
+            <ul>
+                <li>Gateway of India</li>
+                <li>Marine Drive</li>
+                <li>Elephanta Caves</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h2>✨ Explore Destinations</h2>
+
+    <div class="destinations">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=700&q=80"
+                 alt="Delhi">
+            <h3>Delhi</h3>
+            <p>Explore India's capital, historic monuments and vibrant markets.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=700&q=80"
+                 alt="Goa beach">
+            <h3>Goa</h3>
+            <p>Enjoy beautiful beaches, golden sunsets and coastal views.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=700&q=80"
+                 alt="Manali mountains">
+            <h3>Manali</h3>
+            <p>Discover mountain views, green valleys and peaceful nature.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=700&q=80"
+                 alt="Jaipur">
+            <h3>Jaipur</h3>
+            <p>Experience royal palaces, colourful markets and rich heritage.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=700&q=80"
+                 alt="Mumbai">
+            <h3>Mumbai</h3>
+            <p>Explore famous landmarks and the lively city atmosphere.</p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h2>📸 Destination Gallery</h2>
+
+    <div class="gallery">
+
+        <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=600&q=80"
+             alt="Taj Mahal">
+
+        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=600&q=80"
+             alt="Beach">
+
+        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=600&q=80"
+             alt="Mountains">
+
+        <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=600&q=80"
+             alt="Jaipur architecture">
+
+    </div>
+
+    <p class="top">
+        <a href="#top">⬆ Back to Top</a>
+    </p>
+
+    <footer>
+        <p>© 2026 Explore Incredible India 🇮🇳</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

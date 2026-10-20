@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NestedTables</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 3px;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            text-align: center;
+        }
+
+        .nested {
+            width: 100%;
+            margin: 0;
+            border-collapse: collapse;
+        }
+
+        .nested td,
+        .nested th {
+            border: 1px solid black;
+            padding: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Nested Tables</h1>
+
+
+
+<h2>Task 1: Employee Salary Slip</h2>
+
+<table border="1" cellpadding="10" cellspacing="3" width="700">
+
+    <tr>
+        <th colspan="4">
+            Employee Salary Slip
+        </th>
+    </tr>
+
+    <tr>
+        <td><b>Employee Name</b></td>
+        <td>Parul</td>
+
+        <td><b>Employee ID</b></td>
+        <td>EMP101</td>
+    </tr>
+
+    <tr>
+        <td><b>Department</b></td>
+        <td>AI/ML</td>
+
+        <td><b>Designation</b></td>
+        <td>AI Engineer</td>
+    </tr>
+
+    <tr>
+        <th colspan="4">
+            Salary Details
+        </th>
+    </tr>
+
+    <tr>
+        <td colspan="4">
+
+   
+
+            <table class="nested" border="1">
+
+                <tr>
+                    <th>Salary Component</th>
+                    <th>Amount</th>
+                </tr>
+
+                <tr>
+                    <td>Basic Salary</td>
+                    <td>₹30,000</td>
+                </tr>
+
+                <tr>
+                    <td>HRA</td>
+                    <td>₹10,000</td>
+                </tr>
+
+                <tr>
+                    <td>Transport Allowance</td>
+                    <td>₹5,000</td>
+                </tr>
+
+                <tr>
+                    <th>Total Salary</th>
+                    <th>₹45,000</th>
+                </tr>
+
+            </table>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td rowspan="2"><b>Deductions</b></td>
+        <td>PF</td>
+        <td>₹2,000</td>
+        <td rowspan="2"><b>Net Salary: ₹43,000</b></td>
+    </tr>
+
+    <tr>
+        <td>Tax</td>
+        <td>₹0</td>
+    </tr>
+
+</table>
+
+
+
+<h2>Task 2: Student Profile & Marks</h2>
+
+<table border="1" cellpadding="10" cellspacing="3" width="700">
+
+    <tr>
+        <th colspan="4">
+            Student Profile &amp; Marks
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="4"><b>Student Profile</b></td>
+
+        <td><b>Name</b></td>
+        <td>Parul</td>
+
+        <td rowspan="4">
+
+
+            <table class="nested" border="1">
+
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+
+                <tr>
+                    <td>Python</td>
+                    <td>90</td>
+                </tr>
+
+                <tr>
+                    <td>Mathematics</td>
+                    <td>85</td>
+                </tr>
+
+                <tr>
+                    <td>HTML</td>
+                    <td>92</td>
+                </tr>
+
+            </table>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Course</b></td>
+        <td>BCA AI/ML</td>
+    </tr>
+
+    <tr>
+        <td><b>University</b></td>
+        <td>Chitkara University</td>
+    </tr>
+
+    <tr>
+        <td><b>Semester</b></td>
+        <td>1st Semester</td>
+    </tr>
+
+    <tr>
+        <th colspan="3">Total Marks</th>
+        <th>267 / 300</th>
+    </tr>
+
+</table>
+
+
+<h2>Task 3: Product Order Summary</h2>
+
+<table border="1" cellpadding="10" cellspacing="3" width="700">
+
+    <tr>
+        <th colspan="4">
+            Product Order Summary
+        </th>
+    </tr>
+
+    <tr>
+        <td><b>Order ID</b></td>
+        <td>ORD101</td>
+
+        <td><b>Customer</b></td>
+        <td>Parul</td>
+    </tr>
+
+    <tr>
+        <td colspan="4">
+
+          
+
+            <table class="nested" border="1">
+
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+
+                <tr>
+                    <td>Laptop</td>
+                    <td>1</td>
+                    <td>₹50,000</td>
+                    <td>₹50,000</td>
+                </tr>
+
+                <tr>
+                    <td>Mouse</td>
+                    <td>2</td>
+                    <td>₹500</td>
+                    <td>₹1,000</td>
+                </tr>
+
+                <tr>
+                    <td>Keyboard</td>
+                    <td>1</td>
+                    <td>₹1,000</td>
+                    <td>₹1,000</td>
+                </tr>
+
+            </table>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td rowspan="2"><b>Payment</b></td>
+        <td>Subtotal</td>
+        <td>₹52,000</td>
+        <td rowspan="2"><b>₹52,000</b></td>
+    </tr>
+
+    <tr>
+        <td>Delivery</td>
+        <td>Free</td>
+    </tr>
+
+    <tr>
+        <th colspan="3">Grand Total</th>
+        <th>₹52,000</th>
+    </tr>
+
+</table>
+
+
+
+<h2>Task 4: Hotel Booking</h2>
+
+<table border="1" cellpadding="10" cellspacing="3" width="700">
+
+    <tr>
+        <th colspan="4">
+            Hotel Booking
+        </th>
+    </tr>
+
+    <tr>
+        <td><b>Guest Name</b></td>
+        <td>Parul</td>
+
+        <td><b>Booking ID</b></td>
+        <td>HOT101</td>
+    </tr>
+
+    <tr>
+        <td><b>Check-in</b></td>
+        <td>10 October</td>
+
+        <td><b>Check-out</b></td>
+        <td>12 October</td>
+    </tr>
+
+    <tr>
+        <td rowspan="3"><b>Room Details</b></td>
+
+        <td colspan="3">
+
+            <!-- NESTED TABLE -->
+
+            <table class="nested" border="1">
+
+                <tr>
+                    <th>Room Type</th>
+                    <th>Guests</th>
+                    <th>Price / Night</th>
+                </tr>
+
+                <tr>
+                    <td>Deluxe Room</td>
+                    <td>2</td>
+                    <td>₹4,000</td>
+                </tr>
+
+                <tr>
+                    <td>Breakfast</td>
+                    <td>2</td>
+                    <td>Included</td>
+                </tr>
+
+            </table>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Number of Nights</b></td>
+        <td>2</td>
+        <td>₹8,000</td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><b>Total Amount</b></td>
+        <td><b>₹8,000</b></td>
+    </tr>
+
+</table>
+
+</body>
+</html>

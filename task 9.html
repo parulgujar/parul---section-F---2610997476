@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Readers' Haven – Book Registration & Order Form</title>
+</head>
+
+<body>
+
+    <h1>Readers' Haven – Book Registration & Order Form</h1>
+
+    <form>
+
+      
+        <label>Course:</label>
+        <select name="course" required>
+            <option value="">-- Select Course --</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Python Programming">Python Programming</option>
+            <option value="Data Analytics">Data Analytics</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+        </select>
+
+        <br><br>
+
+        
+        <input type="hidden" name="formType" value="OnlineCourse Registration">
+
+       
+        <label>Student Name:</label>
+        <input type="text"
+               name="studentName"
+               placeholder="Enter your full name"
+               required>
+
+        <br><br>
+
+    
+        <label>Email:</label>
+        <input type="email"
+               name="email"
+               placeholder="Enter your email"
+               required>
+
+        <br><br>
+
+   
+        <label>Mobile Number:</label>
+        <input type="tel"
+               name="mobile"
+               placeholder="Enter your mobile number"
+               required>
+
+        <br><br>
+
+       
+        <label>Password:</label>
+        <input type="password"
+               name="password"
+               placeholder="Enter password"
+               required>
+
+        <br><br>
+
+        <label>Gender:</label>
+
+        <input type="radio"
+               name="gender"
+               value="Male"
+               required>
+        Male
+
+        <input type="radio"
+               name="gender"
+               value="Female">
+        Female
+
+        <input type="radio"
+               name="gender"
+               value="Other">
+        Other
+
+        <br><br>
+
+     
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+
+        <br><br>
+
+      
+        <label>Preferred Class Time:</label>
+        <input type="time" name="classTime">
+
+        <br><br>
+
+    
+        <label>Address / Additional Information:</label>
+        <br>
+        <textarea name="address"
+                  rows="5"
+                  cols="40"
+                  placeholder="Enter your address or additional information"></textarea>
+
+        <br><br>
+
+      
+        <label>Upload Document / Photograph:</label>
+        <input type="file" name="document">
+
+        <br><br>
+
+        <!-- Submit and Reset -->
+        <input type="submit" value="Submit">
+
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore India</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff8ee;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(120deg, #ff9933, #ffffff, #138808);
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            color: #542900;
+        }
+
+        nav {
+            background: #173f35;
+            padding: 16px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc80;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 25px auto;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        h2 {
+            color: #a34400;
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 22px;
+            margin: 25px 0;
+        }
+
+        .card {
+            background: white;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px #0002;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        .card h3 {
+            color: #b54b08;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        .gallery img {
+            height: 190px;
+        }
+
+        .contact {
+            background: #e4f3e5;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            line-height: 1.9;
+        }
+
+        footer {
+            background: #173f35;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            margin-top: 35px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 29px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            .hero img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🇮🇳 Explore Incredible India</h1>
+    <p>Discover India's Beauty, Culture, Food and Heritage</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#places">Famous Places</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#foods">Indian Foods</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <section id="home" class="hero">
+        <h2>Welcome to India</h2>
+
+        <p>
+            India is a beautiful country known for its history,
+            colourful festivals, delicious food and diverse culture.
+        </p>
+
+        <img
+            src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1400&q=85"
+            alt="Beautiful Taj Mahal in Agra">
+    </section>
+
+    <section id="places">
+        <h2>Famous Places in India</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=700&q=80"
+                    alt="Taj Mahal">
+                <div class="card-content">
+                    <h3>Taj Mahal</h3>
+                    <p>Located in Agra, the Taj Mahal is famous
+                    for its beautiful architecture and history.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=700&q=80"
+                    alt="India Gate and Delhi">
+                <div class="card-content">
+                    <h3>India Gate</h3>
+                    <p>A famous war memorial and landmark
+                    situated in New Delhi.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=700&q=80"
+                    alt="Hawa Mahal">
+                <div class="card-content">
+                    <h3>Hawa Mahal</h3>
+                    <p>This Jaipur palace is known for its
+                    unique windows and pink architecture.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=700&q=80"
+                    alt="Mumbai city">
+                <div class="card-content">
+                    <h3>Mumbai</h3>
+                    <p>Mumbai is famous for its coastline,
+                    city life and Gateway of India.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=700&q=80"
+                    alt="Kerala backwaters">
+                <div class="card-content">
+                    <h3>Kerala Backwaters</h3>
+                    <p>Enjoy peaceful waterways, greenery
+                    and traditional houseboat experiences.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=700&q=80"
+                    alt="Mountain landscape">
+                <div class="card-content">
+                    <h3>Indian Mountains</h3>
+                    <p>Explore beautiful mountain landscapes
+                    and scenic natural views.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Explore India Gallery</h2>
+
+        <div class="cards gallery">
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=700&q=80"
+                    alt="Beautiful beach">
+                <div class="card-content">
+                    <h3>Beaches</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=80"
+                    alt="Mountain scenery">
+                <div class="card-content">
+                    <h3>Mountains</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=700&q=80"
+                    alt="Indian architecture">
+                <div class="card-content">
+                    <h3>Historical Places</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=700&q=80"
+                    alt="City skyline">
+                <div class="card-content">
+                    <h3>Beautiful Cities</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="foods">
+        <h2>Famous Indian Foods</h2>
+
+        <p style="text-align:center">
+            Explore some delicious Indian dishes!
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80"
+                    alt="Pizza">
+                <div class="card-content">
+                    <h3>Pizza</h3>
+                    <p>A popular dish with cheese, sauce
+                    and delicious toppings.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+                    alt="Burger">
+                <div class="card-content">
+                    <h3>Burger</h3>
+                    <p>A tasty bun filled with vegetables,
+                    sauces and a patty.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&fit=crop&w=700&q=80"
+                    alt="Masala dosa">
+                <div class="card-content">
+                    <h3>Masala Dosa</h3>
+                    <p>A crispy South Indian dish served
+                    with potato filling and chutney.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=700&q=80"
+                    alt="Biryani">
+                <div class="card-content">
+                    <h3>Biryani</h3>
+                    <p>Aromatic rice prepared with spices
+                    and vegetables or meat.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <div class="contact">
+            <h3>We Would Love to Hear From You!</h3>
+
+            <p>
+                <b>Email:</b> exploreindia@example.com<br>
+                <b>Phone:</b> +91 98765 43210<br>
+                <b>Address:</b> New Delhi, India
+            </p>
+
+            <p>
+                Contact us for travel information,
+                destination suggestions and queries.
+            </p>
+
+            <a href="https://www.incredibleindia.gov.in/"
+               target="_blank" rel="noopener noreferrer">
+                Learn More About Incredible India
+            </a>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Explore Incredible India | Made with ❤️</p>
+</footer>
+
+</body>
+</html>
+
+
